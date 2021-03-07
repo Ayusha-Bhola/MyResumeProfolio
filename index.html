@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		  <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 10%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+ </style>
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Ayusha</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+						<li class="nav__item"><a href="#IT" class="nav__link">Internship </a></li>
+						<li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#cerf" class="nav__link">Certifications</a></li>
+						<li class="nav__item"><a href="#ach" class="nav__link">Achievements</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Ayusha Bhola</span><br> CSE Student</h1>
+
+                    <a href="mailto:bholaayusha123@gmail" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/ayusha-bhola-288aa3179/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+    
+                    <a href="https://github.com/Ayusha-Bhola" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/perfil.png" alt="">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+			<section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.jpeg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Ayusha</h2>
+                        <p class="about__text">
+Self-motivated and hardworking fresher seeking an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization. To obtain a position that will allow me to utilize my technical skills, experience and willingness to learn in making an organization successful.
+</p>           
+                    </div>                                   
+                </div>
+            </section>
+            
+			<!--===== Intership and training =====-->
+			<section class="about section " id="IT">
+                <h2 class="section-title">INTERNSHIP & TRAINING</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/internship.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">INTERNSHIP</h2>
+                        <p class="about__text">
+							<p class="about__text">SmartBridge Educational Services Pvt Ltd. 
+							Winter Internship
+																																		December 2019 
+							<h5>Machine Learning with Python  and IBM Watson</h5>
+									   Worked on Machine Learning using Node-RED and IBM Watson
+									   <b>Project:” Rate of Road Accidents”</b>
+									   <a href="https://github.com/Ayusha-Bhola/Internship-based-MLProject"><i><u>https://github.com/Ayusha-Bhola/Internship-based-MLProject</u></i></a>
+							</p>           
+                    </div>  
+					<div>
+                        <h2 class="about__subtitle">TRAINING</h2>
+                        <p class="about__text">
+							<p class="about__text">SmartBridge Educational Services Pvt Ltd. 
+							Attended Training program Organised by  SmartBridge Educational Services Pvt Ltd in collaboration with IBM for<b><i> “Machine Learning with Python and IBM Watson”</i></b> in Hyderabad
+																																		December 2019 
+							
+							</p>           
+                    </div> 		
+                </div>
+            </section>
+            
+
+            <!--===== SKILLS =====-->
+			
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+						<div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/java.png" width="50" height="50"></img>
+                                <span class="skills__name">JAVA</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+						<div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/python.png" width="50" height="50"></img>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/sql.png" width="50" height="50"></img>
+                                <span class="skills__name">SQL</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/c++.png" width="50" height="50"></img>
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+						<div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">88%</span>
+                            </div>
+                        </div>
+						
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/php.png" width="50" height="50"></img>
+                                <span class="skills__name">php</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+         <!--===== Projects =====-->   
+		<section class="work section" id="proj">
+		<h2 class="section-title">Projects</h2>
+		<div class="slideshow-container">
+		<div class="mySlides">
+		<h3><b><i>Kishaan Sahayak</i></b></h3>
+		<h4><b><i>Intelligent Farmers e-Marketplace with prediction of crop risk factors.</i></b></h4>
+
+		  <q>It provides an E-Marketing platform which will reduce the role of middlemen who are hindering the trading sector in agriculture.
+		  It also provides a Leaf Disease Detection system which detects the disease. Plant disease is  an ongoing  challenge for smallholder farmers, which threatens income and food security.
+		  It provides a feature to solve real life farming scenarios. Crops are destroyed every year due to insufficient knowledge of weather conditions that are temperature, rainfall, etc. which is a key feature of crop yield. This project  helps in Predicting Crop Yield throughout the year</q>
+		  <p class="author">- 2020-Present/p>
+		  <p class="author"><a href="https://github.com/Ayusha-Bhola/Farmer_help_portal"> <u><i>https://github.com/Ayusha-Bhola/Farmer_help_portal</i></u></a></p>
+		</div>
+		<div class="mySlides">
+		
+		<h3><b><i>Tally Trade-off (Desktop Application using JAVA)</i></b></h3>
+		  <q>
+			“Tally  Trade-off” is purely JAVA based Desktop Application which connects the TallyERP9 and Database directly, which helps to keep stored data
+			Language & Technologies: JAVA, SQL, XML request-response interface using SOAP API with the help of HTTP interactions.</q>
+			 <p class="author">- FEB 2020 to MARCH 2020 </p>
+<p class="author">- <a href="https://github.com/Ayusha-Bhola/MINI-Project-TallyTrade-off"> <u><i>https://github.com/Ayusha-Bhola/MINI-Project-TallyTrade-off</i></u></a></p>
+		  
+		</div>
+
+		<div class="mySlides">
+			<h3><b><i>Rate of Road Accidents. (Machine Learning based project using Python IBM)</i></b></h3>
+		<q>
+		The model is performed to identify statistically significant factors which can be able to predict the probabilities of crashes and injury that can be used to perform a risk factor and reduce it. It uses ML-algorithms.
+		It is deployed using Node-Red and build using Python and IBM Watson
+		Software: Anaconda – Jupyter Language: Python3 Modules NumPy, pandas.</q>
+		<p class="author">-DEC  2019</p>
+<p class="author">-<a href="(https://github.com/Ayusha-Bhola/Internship-based-MLProject)"> <u><i>https://github.com/Ayusha-Bhola/Internship-based-MLProject</i></u></a></p>
+		  
+		</div>
+
+		
+
+		
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+		</div>
+
+		<div class="dot-container">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		</section>
+					 <!--===== CERTIFICATIONS=====-->
+	
+			 
+            <section class="work section" id="cerf">
+                <h2 class="section-title">Certifications</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+					<span class="skills__name"> NPTEL Programming through C</span>
+                         
+					</span>
+                        <img src="assets/img/c.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+					<span class="skills__name"> NPTEL Programming in C++   </span>
+                         
+					</span>
+                        <img src="assets/img/c++1.jpg" alt="">
+                    </div>
+					<div class="skills__bar skills__ux">
+                                
+                            </div>
+                    <div class="work__img">
+					<span class="skills__name"> NPTEL Programming, Data Structures, and Algorithms using Python  </span>
+                         
+					</span>
+                        <img src="assets/img/py.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+					<span class="skills__name">NPTEL Technical English for engineers       </span>
+                         <img src="assets/img/eng.jpg" alt="">
+					</div>
+					<div class="work__img">
+					<span class="skills__name"> Coursera OOPs in Java      </span>
+                        <img src="assets/img/0001.jpg" alt="">
+                    </div>
+                    <div class="work__img">
+					<span class="skills__name"> Coursera Neural Network and deep Learning     </span>
+                        <img src="assets/img/0002.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+</div>
+            <!--===== Achievements=====-->
+			 <section class="skills section" id="ach">
+                <h2 class="section-title">Achievements</h2>
+
+                <div class="skills__container bd-grid">          
+                    
+                        
+						<div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name"> <b>Treasurer at CSI</b> (Computer Society   of India) chapter of Walchand Institute of Technology, Solapur
+ (March 2020-Present )</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+						
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+							<div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name"> <b>Head Event coordinator  at CSI</b> (Computer Society of India) chapter of Walchand Institute of Technology, Solapur
+ (March 2019-Feb 2020 ).</span>
+                            </div>
+							</div>
+							<div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name"> Bagged<b> Elite medal in NPTEL </b>
+Programming through C
+</span>
+                            </div>
+							</div>
+							<div class="skills__data">
+                            <div class="skills__names">
+                                
+                                <span class="skills__name"> Bagged <b>Silver+Elite medal in 
+NPTEL Technical English</b>
+</span>
+                            </div>
+							</div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+                            
+                    
+                    
+                </div>
+            </section>
+
+			<!--Contact======-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/gmail.png" width="50" height="50"></img>
+                                <span class="skills__name">bholaayusha123@gmail.com</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+						
+					
+					<div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/github1.png" width="50" height="50"></img>
+                                <span class="skills__name"><a href="https://github.com/Ayusha-Bhola"><u>github.com</u></a></span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+					<div class="skills__data">
+                            <div class="skills__names">
+                                <img src="assets/img/ld1.png" width="50" height="50"></img>
+                                <span class="skills__name"><a href="https://www.linkedin.com/in/ayusha-bhola-288aa3179/"><u>linkedin.com</u></a></span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            
+                        </div>
+						<div>   
+							<div class="map-wrapper col-12 col-md-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCZI5F_k6S1k46ujh0SNrapM89f7mJxd30&amp;q=solapur" allowfullscreen=""></iframe></div>
+            </div>
+                        
+                    </div>
+					
+                </div>
+				
+            </section>
+        </main>
+		
+		
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Ayusha</p>
+
+			<div class="row">
+		  <div class="column">
+			<a href="mailto:bholaayusha123@gmail.com"><img src="assets/img/gmail.png" width="50" height="50"></a>
+		  </div>
+		  <div class="column">
+			<a href="https://github.com/Ayusha-Bhola"><img src="assets/img/github.png" width="50" height="50"></a>
+		  </div>
+		  <div class="column">
+			<a href="https://www.linkedin.com/in/ayusha-bhola-288aa3179/"><img src="assets/img/ld.png" width="50" height="50"></a>
+		  </div>
+		  </div>
+		  
+		 
+
+		  
+</div>
+
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
